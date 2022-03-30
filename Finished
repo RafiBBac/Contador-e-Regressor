@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+ <html>
+  <head>
+   <script>
+    var Number = 0;
+   </script>
+    <title>Contador e Regressor do Rafael Bacelar</title>
+  </head>
+  <body>
+   <style
+      type="text/css"> 
+      body {
+          background-color:#40EBFF;
+           }
+      #Bacelar {
+    color:#9D06A0;
+    font-size: 50px;
+    text-align: center;
+    font-family: verdana;
+               }
+      .titulo {
+    color:#9D06A0;
+    font-size: 50px;
+    text-align: center;
+    font-family: verdana;
+             }
+      .buttoncontainer {
+    margin: 0 auto;
+    width: fit-content;
+                       }     
+   </style>
+   <h1 class="titulo">Número Atual
+   </h1>
+   <p id="Bacelar">
+   </p>
+   <script> 
+   document.getElementById("Bacelar").innerHTML = Number;
+   </script>
+   <div class="buttoncontainer"> 
+   <button onclick="addNumber()">+</button>
+   <button onclick="subNumber()">-</button> 
+   </div>
+   <script>
+    function addNumber(){ 
+     Number++;
+      document.getElementById("Bacelar").innerHTML = Number;
+     }
+    function subNumber(){ 
+     Number--;
+      document.getElementById("Bacelar").innerHTML = Number;
+     }
+   </script>
+  </body>
+ </html>
+
+    
